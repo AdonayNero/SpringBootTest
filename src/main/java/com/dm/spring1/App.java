@@ -1,16 +1,14 @@
 package com.dm.spring1;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContextExtensionsKt;
+
 
 /**
  * Hello world!
  */
-public final class App {
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
+
+public  class App {
+
     public static void main(String[] args) {
         //System.out.println("Hello World!");
 
@@ -18,7 +16,7 @@ public final class App {
 
         // registrar los fichero de anotaciones que son de consiguracion con component
         //scan
-        context.register(App.class);
+        context.register(SpringConfigurador.class);
 
         //refresa el contenido
         context.refresh();
